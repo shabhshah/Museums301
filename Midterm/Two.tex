@@ -20,6 +20,9 @@
 %Math symbols
 \usepackage{gensymb}
 
+%Links n shit
+\usepackage{hyperref}
+
 %dope tables
 \usepackage{array}
 \usepackage{float}
@@ -32,6 +35,21 @@
 \newcommand{\ol}[1]{\begin{enumerate}[noitemsep, topsep=0pt]#1\end{enumerate}}
 \newcommand{\ul}[1]{\begin{itemize}[noitemsep, topsep=0pt]#1\end{itemize}}
 \newcommand{\li}[1]{\item#1}
+
+%Bibliography
+\newenvironment{bib}[1]
+  {\begin{list}
+          {}
+          {\setlength{\itemindent}{-#1}
+           \setlength{\leftmargin}{#1}
+           \setlength{\itemsep}{0pt}
+           \setlength{\parsep}{\parskip}
+           \setlength{\topsep}{\parskip}
+           }
+    \setlength{\parindent}{-#1}
+    \item[]
+  }
+  {\end{list}}
 
 \begin{document}
 \singlespacing
@@ -46,15 +64,27 @@
 \subsection*{Using the article by Fitz Gibbon as your starting point, discuss the debate over ownership of the Elgin/Parthenon Marbles, addressing the following points: What is the origin and specific nature of the conflict? What arguments for ownership have been advanced by countries involved? Why might ownership of the Marbles matter to the parties involved?}
 
 \doublespacing
+One of the most visited exhibitions at The British Museum are the Eglin Marbles. These Classical Greek marble sculptures have been on display since 1817.\footnote{``Parthenon Sculptures,'' \textit{The British Museum,} accessed October 24, 2017, \url{http://www.britishmuseum.org/about_us/news_and_press/statements/parthenon_sculptures.aspx}.} Named after Thomas Bruce, the Earl of Elgin and Ambassador to the Ottoman Empire, the marbles were taken from the Parthenon in Athens and shipped to London in the early 1800s.\footnote{\textit{Ibid.}} After financial problems caused Elgin to sell the marbles to Parliament in 1816, they were put on display in the British Museum.\footnote{Kate Fitz Gibbon, \textit{Who Owns the Past?: Cultural Policy, Cultural Property, and the Law} (New Brunswick, NJ: Rutgers University Press, 2005), 113.} Since Elgin began acquiring the marbles, they have been a source of controversy over who the rightful owner is, and how to move forward. Greece believes that the marbles should be returned, but the English consider the marbles to be their own.
 
+Elgin arrived in Athens in 1800 with the ``intent to take... measurements and make drawings and plaster casts from the Parthenon.''\footnote{Gibbon, 110.} However, once Elgin moved to Constantinople, his men started to ``dismantle a substantial portion of the finest... remaining decorative elements of the Parthenon.''\footnote{Gibbon, 111.} Before heading back to England, Elgin was arrested by the French due to his role in driving them from Egypt and because he had secured the marbles before Napoleon was able to. During this time, Elgin's mother collected the marbles in a ``shedlike building.''\footnote{\textit{Ibid.}} When he returned to England deep in debt, he attempted to sell the marbles to Parliament for The British Museum.\footnote{\textit{Ibid.}} However, the debate over the rightful ownership had already started. Some in Parliament wanted to keep the marbles for their protection and preservation, while a minority argued to return the marbles to the Ottoman government.\footnote{Gibbon, 112.} After fierce debates, it was decided that Parliament would buy the marbles from Elgin, and The British Museum placed the marbles on display.
+
+In 1982, the Greek Minister of Culture called on England to return the marbles to Greece.\footnote{Gibbon, 113.} That same year, Greece formally requested that Britain return the marbles. However, the request was declined, with the trustees of The British Museum ``[stating] several times that their duty to the public and interest in preserving the sculptures precluded any consideration of return of the marbles.''\footnote{Gibbon, 114.} Even though the Greek government's request was denied, it has continued to request that the British return the marbles.
+
+The legal arguments for rightful ownership begin with the authorization by the Ottoman Empire for Elgin to take the marbles. At first, local Ottoman officials harassed Elgin's men, but after Elgin obtained a ``\textit{firman}'', the men were able to work without hindrance.\footnote{\textit{Ibid.}} This \textit{firman} was used to legitimize the purchase of the marbles by Parliament, but the version used was a translation.\footnote{Gibbon, 115.} The translation did not have an official seal, and the original document has not been found. Without the original document, it is difficult to tell what authorization Elgin had from the government to excavate, and how much he could take. However, the statute of limitations for the return of stolen property has run out, as Greece gained independence in 1828, but did not request the marbles back until 1983.\footnote{Gibbon, 116.}
+
+The ethical arguments for rightful ownership are far more applicable, as the Greek government has stopped pursuing the legal route for repatriation of the marbles. According to Greece, ``the sculptures are Greek and therefore belong in Greece.''\footnote{\textit{Ibid.}} Additionally, many Greeks feel deprived of their heritage and culture since they are not easily able to see the marbles, take part in the ``preservation, study, and enjoyment'' of their own history, nor use the marbles for monetary gain.\footnote{Gibbon, 117.} 
+
+According to the British, if the marbles were not removed, the Parthenon's history would not be preserved. The British back this claim up with ``evidence that the Parthenon... [was] damaged by the depredations of visiting tourists, local antiquities dealers, and agents of other countries.''\footnote{\textit{Ibid.}} However, between 1937 and 1938, The British Museum failed to protect the marbles by allowing an abrasive cleaning to take place.\footnote{Gibbon, 118.} Another argument the British put forward is the marbles are an integral part of The British Museum. ``Almost all of the five million visitors a year'' of the museum see the marbles.\footnote{\textit{Ibid.}} If the marbles were returned to Greece, much fewer people would see them, reducing access for large amounts of people. In spite of this, many more Greeks would have access to view the marbles.
 
 \newpage
 \singlespacing
 \begin{center}
-\textit{Works Cited}
+{\large\textit{Works Cited}}
 \end{center}
 
-\hangindent=2em
-\hangafter=1
-\noindent Gibbon, Kate Fitz. \textit{Who Owns the Past?: Cultural Policy, Cultural Property, and the Law}. New Brunswick, NJ: Rutgers University Press, 2005.
+\begin{bib}{2em}
+Gibbon, Kate Fitz. \textit{Who Owns the Past?: Cultural Policy, Cultural Property, and the Law}. New Brunswick, NJ: Rutgers University Press, 2005. \\
+
+``Parthenon Sculptures.'' \textit{The British Museum.} Accessed October 24, 2017. \url{http://www.britishmuseum.org/about_us/news_and_press/statements/parthenon_sculptures.aspx}. \\
+\end{bib}
 \end{document}
